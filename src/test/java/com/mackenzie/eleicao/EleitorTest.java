@@ -22,8 +22,10 @@ public class EleitorTest {
     @Test
     public void testMtClasssificarEleitorInvalido() {
         System.out.println("Teste da classe Idade Invalida");
-        assertEquals("Idade Invalida", objEleitor.mtClasssificarEleitor(0));
-        // assertEquals("Idade Invalida", objEleitor.mtClasssificarEleitor(-1));
+        // ERRO
+        // assertEquals("Idade Invalida", objEleitor.mtClasssificarEleitor(0));
+        // CERTO
+        assertEquals("Idade Invalida", objEleitor.mtClasssificarEleitor(-1));
         assertEquals("Idade Invalida", objEleitor.mtClasssificarEleitor(131));
     }
     
